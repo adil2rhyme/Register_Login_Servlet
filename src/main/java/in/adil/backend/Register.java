@@ -44,7 +44,7 @@ public class Register extends HttpServlet{
 				rd.include(req, resp);
 			} else {
 				resp.setContentType("text/html");
-				out.print("<h3 style='color:red'>User not registered due to some error..</h3>");
+				out.print("<h3 style='color:red'>User not registered due to error..</h3>");
 				RequestDispatcher rd = req.getRequestDispatcher("/register.jsp");
 				rd.include(req, resp);
 			}
